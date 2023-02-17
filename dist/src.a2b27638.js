@@ -189,6 +189,11 @@ var onClickAdd = function onClickAdd() {
   var li = document.createElement("li");
   li.innerText = inputText;
 
+  // button(完了)タグ生成
+  var completeButton = document.createElement("button");
+  completeButton.innerText = "完了";
+  console.log(completeButton);
+
   // divタグの子要素に各要素を設定
   div.appendChild(li);
 
@@ -223,7 +228,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38893" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45095" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
