@@ -73,6 +73,13 @@ const createIncompleteList = (text) => {
     deleteFromIncompleteList(deleteButton.parentNode);
   });
 
+  li.innerText = inputText;
+
+  // button(完了)タグ生成
+  const completeButton = document.createElement("button");
+  completeButton.innerText = "完了";
+  console.log(completeButton);
+
   // divタグの子要素に各要素を設定
   div.appendChild(li);
   div.appendChild(completeButton);
